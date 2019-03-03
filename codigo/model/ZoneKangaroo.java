@@ -93,9 +93,12 @@ public class ZoneKangaroo{
 	
 	public String infoKangaroo(){
 		String message ="";
-		message += env1.infoKangaroo()+"\n";
-		message += env2.infoKangaroo()+"\n";
-		message += env3.infoKangaroo()+"\n";
+		message += "Primer ambiente:\n "+env1.infoKangaroo();
+		message += "\n-----------------------------------------------------\n";
+		message += "Segundo ambiente:\n "+env2.infoKangaroo();
+		message += "\n-----------------------------------------------------\n";
+		message += "Tercer ambiente:\n "+env3.infoKangaroo();
+		message += "\n-----------------------------------------------------\n";
 		return message;
 	}
 	
@@ -127,14 +130,13 @@ public class ZoneKangaroo{
 	//Vacunacion
 	public String vaccination(){
 		String message = "";
-		message += "Primer ambiente:\n";
+		message += "Primer ambiente:\n\n";
 		message += env1.vaccination();
-		message += "\nSegundo ambiente:\n";
+		message += "\nSegundo ambiente:\n\n";
 		message += env2.vaccination();
-		message += "\nTercer ambiente:\n";
+		message += "\nTercer ambiente:\n\n";
 		message += env3.vaccination();
 		return message;
 	}
-
 	
 }

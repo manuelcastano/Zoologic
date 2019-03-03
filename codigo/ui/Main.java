@@ -18,17 +18,14 @@ public class Main {
 	public static void main(String[] args) {
 
 		Main m = new Main();
-		m.menu();
+		m.welcome();
 		m.showMenu();
 	}
 
 		
 		
 	//Menu
-	
-	public void menu(){
-		welcome();
-	}
+
 	
 	public void welcome(){
 		System.out.println("----------------------------------------------------------------------------------------------------");
@@ -63,29 +60,29 @@ public class Main {
 			switch(option){
 				case(1):
 					System.out.println("");	
-					System.out.println(zooCali.getKangarooZone().vowelsNames());	
+					System.out.println(zooCali.vowelsNames());	
 					System.out.println("");
 				break;
 				case(2):
 					System.out.println("");
-                    System.out.println(zooCali.getDragonZone().infoZone());
+                    System.out.println(zooCali.infoZoneD());
 					System.out.println(" ");
 					break;
 				case(3):
 					System.out.println("");
-                    System.out.println(zooCali.getDragonZone().infoDragon());
+                    System.out.println(zooCali.infoDragon());
 					break;
 				case(4):
 					System.out.println("");	
-					System.out.println(zooCali.getKangarooZone().infoZone());
+					System.out.println(zooCali.infoZoneK());
 					System.out.println("");
 					break;
 				case(5):
 					System.out.println("");
-					System.out.println(zooCali.getKangarooZone().infoEnvironments());
+					System.out.println(zooCali.infoEnvironments());
 				break;
 				case(6):
-				    System.out.println(zooCali.getKangarooZone().infoKangaroo()+"\n");
+				    System.out.println(zooCali.infoKangaroo()+"\n");
 				break;
 				case(7):
                     addKangaroo();
@@ -98,7 +95,7 @@ public class Main {
 				break;
 				case(10):
 				    System.out.println("");
-				    System.out.println(zooCali.getKangarooZone().vaccination());
+				    System.out.println(zooCali.vaccination());
 				break;
 				case(11):
 				break;
@@ -118,7 +115,7 @@ public class Main {
         Kangaroo kan1 = new Kangaroo ("Pablo", 15.6, 1.6, 1, 3, new Date (25, 11, 2008));
 		Kangaroo kan2 = new Kangaroo("Andrea", 35.3, 1.5, 2, 6, new Date (1, 2, 2000));
 		Kangaroo kan3 = null;
-		Kangaroo kan4 = new Kangaroo ("Andres", 25.0, 1.57, 1, 6, new Date (4, 8, 2018));
+		Kangaroo kan4 = new Kangaroo ("Andres", 25.0, 1.57, 1, 6, new Date (3, 2, 2018));
 		Kangaroo kan5 = new Kangaroo("Lina", 40.0, 1.7, 2, 5, new Date (7, 4, 2015));
 		Kangaroo kan6 = null;
 		Kangaroo kan7 = new Kangaroo ("Fernando", 28.0, 1.67, 1, 5, new Date (1, 1, 2019));
@@ -148,9 +145,9 @@ public class Main {
 		while (exit != 1){
 			System.out.println("Nombre:");
 			name = reader.nextLine();
-			System.out.println("Peso:");
+			System.out.println("Peso(kilos):");
 			weight = reader.nextDouble();
-			System.out.println("Estatura:");
+			System.out.println("Estatura(metros):");
 			height = reader.nextDouble();
 			System.out.println("Sexo (1. Macho, 2. Hembra): ");
 			sex = reader.nextInt();
@@ -198,7 +195,7 @@ public class Main {
 				incorrect = 2;
 			}
 			if(incorrect != 2){
-				System.out.println("Mes de nacimiento:");
+				System.out.println("Mes de nacimiento(numero):");
 			    month = reader.nextInt();
 			    if (!(month >= 1 && month <= 12)){
 				System.out.println("Ingresa un mes valido");

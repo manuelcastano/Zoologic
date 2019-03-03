@@ -118,8 +118,8 @@ public class ZoneDragon{
 	//info dragon
 	public String infoDragon(){
 		String message ="";
-		message += dra1.infoDragon();
-		message += dra2.infoDragon();
+		message += "El primer dragon "+dra1.infoDragon();
+		message += "El segundo dragon "+dra2.infoDragon();
 		return message;
 	}
  

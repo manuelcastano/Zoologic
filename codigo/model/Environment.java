@@ -148,13 +148,13 @@ public class Environment {
 	public String infoKangaroo (){
 		String message = "";
 		if(kan1 !=null){
-			message += kan1.showKangaroo()+"\n";
+			message += "El primer canguro:\n"+kan1.showKangaroo()+"\n";
 		}
 		if(kan2 !=null){
-			message += kan2.showKangaroo()+"\n";
+			message += "El segundo canguro:\n"+kan2.showKangaroo()+"\n";
 		}
 		if(kan3 !=null){
-			message += kan3.showKangaroo()+"\n";
+			message += "El tercer canguro:\n"+kan3.showKangaroo()+"\n";
 		}
 		return message;
 	}

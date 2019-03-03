@@ -178,7 +178,7 @@ public class Kangaroo {
 
 
 
-	public int numberOfDays() {
+public int numberOfDays() {
 
 		GregorianCalendar date = new GregorianCalendar(birth.getYear(), birth.getMonth() - 1, birth.getDay());
 
@@ -186,9 +186,21 @@ public class Kangaroo {
 		
 		GregorianCalendar actualDate = new GregorianCalendar();
 		
-		if ((date.get(Calendar.DAY_OF_MONTH) == actualDate.get(Calendar.DAY_OF_MONTH)) && (date.get(Calendar.MONTH) == actualDate.get(Calendar.MONTH)) && (date.get(Calendar.YEAR) == actualDate.get(Calendar.YEAR))){
-		date.add(Calendar.DAY_OF_MONTH, 1);
-		++cont;
+		while (true) {
+		
+			if ((date.get(Calendar.DAY_OF_MONTH) == actualDate.get(Calendar.DAY_OF_MONTH))
+		
+					&& (date.get(Calendar.MONTH) == actualDate.get(Calendar.MONTH))
+		
+					&& (date.get(Calendar.YEAR) == actualDate.get(Calendar.YEAR))){
+		
+				break;
+		
+			}
+		
+			date.add(Calendar.DAY_OF_MONTH, 1);
+		
+			cont++;
 		
 		}
 		
