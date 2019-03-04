@@ -40,7 +40,7 @@ public class Main {
 		
         while(option !=11){
 		
-		System.out.println("1. Animales cuyos nombres empiezan o terminan con una mayuscula");
+		System.out.println("1. Animales cuyos nombres empiezan y terminan con una vocal");
 		System.out.println("2. Ver datos de la zona de los dragones barbados");
 		System.out.println("3. ver datos de los dragones");
 		System.out.println("4. Ver datos de la zona de los canguros");

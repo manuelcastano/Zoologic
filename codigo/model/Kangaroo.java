@@ -123,12 +123,9 @@ public class Kangaroo {
 	//Vocales
 	public boolean vowels(){
 		boolean haveVowels = false;
-		if (getName().charAt(0) == 'a' || getName().charAt(0) == 'e' || getName().charAt(0) == 'i' || getName().charAt(0) == 'o' || getName().charAt(0) == 'u' || getName().charAt(0) == 'A' || getName().charAt(0) == 'E' || getName().charAt(0) == 'I' || getName().charAt(0) == 'O' || getName().charAt(0) == 'U'){
+		if ((getName().charAt(0) == 'a' || getName().charAt(0) == 'e' || getName().charAt(0) == 'i' || getName().charAt(0) == 'o' || getName().charAt(0) == 'u' || getName().charAt(0) == 'A' || getName().charAt(0) == 'E' || getName().charAt(0) == 'I' || getName().charAt(0) == 'O' || getName().charAt(0) == 'U') && ((getName().charAt(getName().length()-1)) == 'a' || getName().charAt(getName().length()-1) == 'e' || getName().charAt(getName().length()-1) == 'i' || getName().charAt(getName().length()-1) == 'o' || getName().charAt(getName().length()-1) == 'u' || getName().charAt(getName().length()-1) == 'A' || getName().charAt(getName().length()-1) == 'E' || getName().charAt(getName().length()-1) == 'I' || getName().charAt(getName().length()-1) == 'O' || getName().charAt(getName().length()-1) == 'U') ){
 			haveVowels = true;
 	        }
-        if ((getName().charAt(getName().length()-1)) == 'a' || getName().charAt(getName().length()-1) == 'e' || getName().charAt(getName().length()-1) == 'i' || getName().charAt(getName().length()-1) == 'o' || getName().charAt(getName().length()-1) == 'u' || getName().charAt(getName().length()-1) == 'A' || getName().charAt(getName().length()-1) == 'E' || getName().charAt(getName().length()-1) == 'I' || getName().charAt(getName().length()-1) == 'O' || getName().charAt(getName().length()-1) == 'U'){
-			haveVowels = true;
-		    }
 		return haveVowels;
 	}
 	
