@@ -97,17 +97,17 @@ public class Environment {
 	//Calcular el area del ambiente
 	
 	public double environmentArea(){
-		double theArea = 0.0;
+		double size = 0;
 		if (getKan1() != null){
-			theArea += kan1.getHeight()*8.0;
+			size += kan1.getHeight()*8.0;
 		}
 		if (getKan2() != null){
-			theArea += kan2.getHeight()*8.0;
+			size += kan2.getHeight()*8.0;
 		}
 		if (getKan3() != null){
-			theArea += kan3.getHeight()*8.0;
+			size += kan3.getHeight()*8.0;
 		}
-		return theArea;
+		return size;
 	}
 	
 	//Ya hay machos?
@@ -183,7 +183,7 @@ public class Environment {
 	}
 	public String infoEnvironment (){
 		String message ="";
-		message += "tiene de area "+area+" y necesita de comida "+calculateFood()+" kilos\n";
+		message += "tiene de area "+environmentArea()+" y necesita de comida "+calculateFood()+" kilos\n";
 		return message;
 	}
 	
